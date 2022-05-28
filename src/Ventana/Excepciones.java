@@ -7,7 +7,7 @@ public class Excepciones {
 		}
 	}
   public static void numberIsPositive (Integer numberToValidate, String errorMessage) throws Exception {
-		if (numberToValidate > 0) {
+		if (numberToValidate < 0) {
 			throw new Exception(errorMessage);
 		}
 	}
