@@ -212,7 +212,7 @@ public class ProyectoCurso implements ActionListener {
 						idPersona, nombre, apellido, deptoResidencia, cantHijos, fechaNacimiento);
 	
 				// AGREGAR PERSONA A LA LISTA
-				listaPersona.add(persona);
+				Ventana.Persona.listaPersona.add(persona);
 			} catch (Exception ex) {
 				// VENTANA CON MENSAJE DE ERROR
 				JOptionPane.showMessageDialog(null, ex);
@@ -220,10 +220,10 @@ public class ProyectoCurso implements ActionListener {
 		}
 		if (buttonMostrar == e.getSource()) {
 			String texto = "";
-
+			
 			// PARSEO DE LISTA A TEXTO
-			for (int i = 0; i < listaPersona.size(); i++) {
-				Persona persona = listaPersona.get(i);
+			for (int i = 0; i < Ventana.Persona.listaPersona.size(); i++) {
+				Persona persona = Ventana.Persona.listaPersona.get(i);
 				Boolean tieneHijos = !(persona.getCantHijos() == 1);
 
 				texto += ("Persona " + (i + 1) + " \n Nombre: " + persona.getNombre()
@@ -231,6 +231,7 @@ public class ProyectoCurso implements ActionListener {
 						+ " y tiene " + persona.getCantHijos() + " hijo" + (tieneHijos ? "s" : "") + " \n \n");
 			}
 			JOptionPane.showMessageDialog(null, texto);
+			System.out.println(Ventana.Persona.listaPersona.size());
 		}
 
 	}
