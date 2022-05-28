@@ -197,7 +197,7 @@ public class ProyectoCurso implements ActionListener {
 				// DEPARTAMENTO PERSONA
 				Excepciones.validateStringNotEmpty(deptoInput,
 				"El departamento de residencia de una persona no puede estar vacío");
-					
+				
 				// HIJOS PERSONA 
 				Excepciones.validateStringNotEmpty(hijosInput, "Cantidad de Hijos no puede estar vacía");
 				cantHijosInteger = Integer.parseInt(hijosInput);

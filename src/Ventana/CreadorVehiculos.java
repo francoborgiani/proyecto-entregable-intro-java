@@ -245,9 +245,9 @@ public class CreadorVehiculos implements ActionListener {
 					// COLOR
 					Excepciones.validateStringNotEmpty(color, "El color de un barco no puede estar vacío");
 					// ESLORA
-					Excepciones.numberIsPositive(eslora.intValue(), "La eslora del barco no puede ser menor o igual a 0");
+					Excepciones.numberIsPositive(eslora.doubleValue(), "La eslora del barco no puede ser menor o igual a 0");
 					// MANGA 
-					Excepciones.numberIsPositive(manga.intValue(), "La manga del barco no puede ser menor o igual a 0");					
+					Excepciones.numberIsPositive(manga.doubleValue(), "La manga del barco no puede ser menor o igual a 0");					
 
 					// INSTANCIA CLASE BARCO
 					Barco barco = new Barco(listaVehiculos.size(), nombre, color, duenio,
@@ -276,7 +276,7 @@ public class CreadorVehiculos implements ActionListener {
 					// COLOR
 					Excepciones.validateStringNotEmpty(color, "El color de un avión no puede estar vacío");
 					// LONGITUD
-					Excepciones.numberIsPositive(longitud.intValue(), "La longitud del avión no puede ser menor o igual a 0");
+					Excepciones.numberIsPositive(longitud.doubleValue(), "La longitud del avión no puede ser menor o igual a 0");
 					// PASAJEROS
 					Excepciones.numberIsPositive(pasajeros, "El número de pasajeros no puede ser menor o igual a 0");
 

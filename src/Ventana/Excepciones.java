@@ -6,13 +6,13 @@ public class Excepciones {
 			throw new Exception(errorMessage);
 		}
 	}
-  public static void numberIsPositive (Integer numberToValidate, String errorMessage) throws Exception {
-		if (numberToValidate <= 0) {
+  public static void numberIsPositive (double d, String errorMessage) throws Exception {
+		if (d < 0) {
 			throw new Exception(errorMessage);
 		}
 	}
-  public static void isInByteRange (Integer numberToValidate, String errorMessage) throws Exception {
-		if (numberToValidate > 255 || numberToValidate < 0) {
+  public static void isInByteRange (Integer cantHijosInteger, String errorMessage) throws Exception {
+		if (cantHijosInteger > 255 || cantHijosInteger < 0) {
 			throw new Exception(errorMessage);
 		}
 	}
