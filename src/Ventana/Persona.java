@@ -86,6 +86,6 @@ public class Persona {
 	}
 	
 	public void agregarVehiculo(Vehiculo vehiculo) {
-		this.vehiculos.add(vehiculo);
+		vehiculos.add(vehiculo);
 	}
 }
